@@ -1,0 +1,42 @@
+$color-main: #212121;
+$color-secondary: #131313;
+$color-decorate:#d13b3d;
+
+
+/* MAIN CONTENT */
+.main-content{
+    display: flex;
+    width: 100%;
+    margin:0px auto;
+    justify-content:center;
+    padding: 2rem 0px;
+    flex-wrap: wrap;
+    .texto-principal{
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        padding: 2rem;
+        p{
+            line-height: 26px;
+            /* padding-right: 2rem; */
+        }
+    }
+}
+
+.img-principal{
+    display: flex;
+    margin: 2rem;
+    width: 500px;
+    overflow: hidden;
+    .img-main{
+        border:1.2px solid rgb(255, 255, 255);
+        align-self: center;
+        width: 100%;
+        transition: all 0.4s ease;
+    }
+}
+
+.img-main:hover{
+    transform: scale(1.2);
+}

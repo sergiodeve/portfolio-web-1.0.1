@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">    
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/a6935c136e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Portfolio Web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container-img">
+            <div class="logo">
+                <a href="#" class="home"><img src="./assets/25231.png" alt=""></a>
+                <span class="logo-title">Simple Code</span>
+            </div>
+            <div class="enlaces-github-linkedin">
+                <a href="https://github.com/sergiodeve?tab=repositories" target="_blank"><img src="./assets/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/sergio-duque-1024b1239/" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <div class="container-main-content">
+        <div class="main-content">
+            <div class="texto-principal animate__animated animate__backInLeft">
+                <h1>Bienvenido a mí <span style="color:#d13b3d ;">Portafolio Web</span></h1>
+                <p class="animate__bounce">Este portafolio web es mí carta de presentacion para encontrar mi primer empleo como desarrollador web frontend, me adentre en este mundo que es la programacion por curiosidad y acabe muy interesado en todas las posibilidades que ofrece.<br> Soy autodidacta todo lo que se lo he aprendido por mi cuenta usando los recurso que me brinda la web, algunos de ellos como youtube, en especial el canal de <sapn style="color:#d13b3d">"Fazt Code"</sapn>  y <sapn style="color:#d13b3d">"FreeCodeCamp.org"</sapn>. La web <sapn style="color:#d13b3d">"developer.mozilla.org"</sapn> y he realizado varios cursos en  <sapn style="color:#d13b3d">"udemy"</sapn> "Javascript moderno guia Definitiva" por Juan Palbo De la torre Valdez, "React de cero a experto" y "Git + GitHub" por Fernando Herrera.<br>
+                Tambien he usado por encima tecnologias como NodeJS con express y MongoDB.<br>
+                   
+                </p>
+            </div>
+
+            <div class="img-principal animate__animated animate__bounceInUp">
+                 <img class="img-main" src="./assets/img-main.jpg" alt=""> 
+            </div>
+        </div>
+    </div>
+
+    <div class="b-g"></div>
+<!-- SECOND CONTENT -->
+    <div class="container-second-content">
+        <h2 style="text-align: center;">Sobre Mí</h2>
+        <div class="second-content">
+            <!-- tarjeta de contacto -->
+            <div class="card-perfil">
+                <div class="card-img">
+                    <img src="./assets/perfilw.png"  alt="">
+                </div>
+                <div class="card-header">
+                    <h2>Sergio Duque</h2>
+                    <p>Futuro Front-end Dev</p>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <div class="contacto">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>sergio.work.dev@gmail.com</p>
+                    </div>
+                    <div class="contacto">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="lni lni-whatsapp"></i>
+                        <p>+34 615475195</p>
+                    </div>
+                    <hr>
+                    <p>Actualmente sigo formandome y espero llegar a formar parte lo antes posible de un equipo que me ayude a desarrollarme profesional y personalmente.</p>
+                </div>
+            </div>
+            <!-- Card skills -->
+            <div class="card-skills">
+                <h2>Skills</h2>
+                <div class="progress-item">
+                    <p><i class="fa-brands fa-html5" style="color:orangered ;" ></i> HTML5</p>
+			        <progress id="html5" max="100" value="85"></progress>
+			        <span></span>
+                </div>
+                <div class="progress-item">
+                    <p><i class="fa-brands fa-css3-alt" style="color:rgb(26, 110, 212) ;" ></i> CSS</p>
+			        <progress id="css" max="100" value="73"></progress>
+			        <span></span>
+                </div>
+                <div class="progress-item">
+                    <p><i class="fa-brands fa-js" style="color: yellow;" ></i> JAVASCRIPT</p>
+			        <progress id="javascript" max="100" value="65"></progress>
+			        <span></span>
+                </div>
+                <div class="progress-item">
+                    <p><i class="fa-brands fa-react" style="color: rgb(23, 136, 180);" ></i> REACT</p>
+			        <progress id="react" max="100" value="50"></progress>
+			        <span></span>
+                </div>
+                <div class="progress-item">
+                    <p><i class="fa-brands fa-git-alt" style="color: rgb(206, 108, 28);" ></i> GIT</p>
+			        <progress id="git" max="100" value="60"></progress>
+			        <span></span>
+                </div>
+                <p>El porcentaje de las barras es subjetivo, pero quedan chulas</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-g"></div>
+
+    <div class="container-proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos">
+            <div class="prueba-1">
+                <div class="proyecto primero">
+                    <a href="https://sergiodeve.github.io/web-drizzt-books/" target="_blank">
+                        <img src="./assets/proyecto-01.JPG" alt="">
+                    </a> 
+                </div>
+                <p>HTML - CSS - JS</p>
+            </div>
+            
+            <div class="prueba-2">
+                <div class="proyecto segundo">
+                    <a href="https://sergiodeve.github.io/LandingPage-RazerPro/" target="_blank">
+                        <img src="./assets/techaudifonos.JPG" alt="">
+                    </a>
+                </div>
+                <p>HTML - CSS</p>
+            </div>
+                
+            
+            <div class="prueba-3">
+                <div class="proyecto tercero">
+                    <a href="https://sergiodeve.github.io/simpleQuiz/" target="_blank">
+                        <img src="./assets/quiz.JPG" alt="">
+                    </a>
+                </div>
+                <p>HTML - CSS - JS</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="b-g"></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <img src="./assets/logo4.JPG" alt="">
+            <p>Simple Code@</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+    
+
+
+            
+                   
+
+
+        
+          
+
+                
+                
+                
+
+

@@ -1,0 +1,64 @@
+$color-main: #212121;
+$color-secondary: #131313;
+$color-decorate:#d13b3d;
+
+/* SECOND CONTENT */
+.container-second-content{
+    background-color: $color-secondary;
+    padding: 2rem;
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.second-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0px auto;
+}
+ 
+/* card perfil */
+.card-perfil{
+    width: 350px;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border:1px solid white;
+    /* -webkit-box-shadow: 0px 0px 8px 3px #7e7e7e; 
+    box-shadow: 0px 0px 8px 3px #7c7c7c; */
+    .card-img{
+        text-align: center;
+        img{
+            width: 210px;
+        }
+    }
+    h2{
+        color: $color-decorate;
+    }
+    .contacto{
+        display: flex;
+        padding: 10px 0px;
+        p{
+            margin: 0px 0px 0px 10px;
+        }
+    }
+}
+/* card-skills */
+.card-skills{
+    padding: 2rem;
+    margin: 1rem;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+    h2{
+        color: $color-decorate;
+    }
+}
+
+progress{
+ width: 220px;
+}

@@ -1,0 +1,44 @@
+$color-main: #212121;
+$color-secondary: #131313;
+$color-decorate:#d13b3d;
+
+
+/* 
+-añadir border bottom en el header al hacer scroll 
+-añadir enlaces en git y linkedin
+-arreglar mediaqueris
+
+
+*/
+
+
+/* HEADER */
+.header{
+    background-color: $color-secondary;
+    padding: 12px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    .header-container-img{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin:0px auto;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    .logo-title{
+        margin-left: 10px;
+        font-size: 1.4rem;
+    }
+    .purple{
+        color: #c0c01f;
+    }
+    img{
+        width: 60px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+}

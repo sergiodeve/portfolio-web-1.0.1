@@ -1,0 +1,126 @@
+@use 'header';
+@use 'mainContent';
+@use 'secondContent';
+@use 'footer';
+
+/* variables */
+$color-main: #212121;
+$color-secondary: #131313;
+$color-decorate:#d13b3d;
+
+*{box-sizing: border-box;}
+
+body{
+    padding: 0; 
+    margin: 0;
+    background-color: $color-main;
+    color: rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+i{
+    font-size: 24px;
+    ;
+}
+
+    
+.b-g{
+    height: 250px;
+    background: url('../assets/backgraund.jpg');
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    opacity: 0.7;
+}
+
+
+/* MEDIA QUERIS*/
+@media (max-width: 1900px) {  //siguiente medida 960px=> mobile
+    .header-container-img{
+        width: 100%;
+    }
+    .main-content{
+        justify-content: center;
+        
+    }
+    .texto-principal{
+        width: 700px;
+    }
+  }
+
+  @media (max-width: 1310px) {  //siguiente medida 960px=> mobile
+    .header-container-img{
+        width: 100%;
+    }
+    .main-content{
+       justify-content: center;
+     
+    }
+  }
+
+ 
+
+.container-proyectos{
+    text-align: center;
+    padding: 2rem;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    a{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+        
+    .proyectos{
+        margin: 0px auto;
+        width: 100%;
+        display: grid;
+        grid-gap: 2rem;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+       /*  justify-self: center; */
+        .proyecto{
+            border: solid 1px rgb(255, 255, 255);
+            justify-self: center;
+            background-color: rgba(0, 0, 0, 0.417);
+            transition: .4s;
+            width: 350px;
+            -webkit-box-shadow: 5px 5px 7px 2px #000000; 
+            box-shadow: 5px 5px 7px 2px #000000;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .proyecto:hover{
+            opacity: 0.5;
+        }
+    }
+}
+
+@media (max-width: 1200px) {  //siguiente medida 960px=> mobile
+    .proyectos{
+        justify-content: center;
+        grid-template-columns:repeat(1, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .prueba-1{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .prueba-2{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .prueba-3{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+}
+        
+       
+
+
+/* sass --watch main.scss style.css */
